@@ -5,8 +5,7 @@ The official repository of the paper can be found here: https://github.com/iSarm
 
 ## Dataset
 The point cloud dataset is publicly available and can be downloaded from the following link: https://github.com/optas/latent_3d_points
-In our experiments, we work on a subset of 5000 point clouds for which we have provided the numpy array containing the path for each point cloud (available here: https://drive.google.com/drive/folders/12tcCWpOsPM06u79WIyFt2uJfBkXh1ZcP?usp=sharing). After downloading the dataset, only the point clouds available in this numpy array have been used for training and testing.
-'generate_noisy_point_clouds.py' creates a noisy point cloud for each. This is done by initializing a random seed index and removing 20 percent of points following the seed index.
+In our experiments, we work on a subset of 5000 point clouds.'generate_noisy_point_clouds.py' creates a noisy point cloud for each. This is done by initializing a random seed index and removing 20 percent of points following the seed index.
 
 ## Training of Autoencoder
 The complete code for dataloader, encoder-decoder models, chamfer loss and training is present in 'autoencoder.ipynb'. In the results folder, we have added the loss plots and some results of the trained autoencoder. 
